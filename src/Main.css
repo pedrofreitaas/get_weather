@@ -1,0 +1,62 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+main{
+    margin: auto; padding: 25px 20px;
+    margin-top: 30px;
+    text-align: center;
+
+    width: fit-content; height: fit-content;
+
+    border-top: 3px dashed #000;
+
+    border-bottom-left-radius: 4%; border-bottom-right-radius: 4%;
+
+    font-family: Verdana;
+    font-weight: bold;
+    
+    background: linear-gradient(to bottom, rgba(142, 138, 138, 0.5), rgba(0,0,0, .1));
+
+    display: flex; flex-direction: column;
+
+    animation: scaleUp .25s towards;
+
+    box-shadow: 10px 10px rgb(199, 194, 194);
+}
+
+@keyframes scaleUp {  
+    0%{
+        transform: scale(0);
+    }
+
+    20%{
+      transform: scale(0.2);
+    }
+  
+    40%{
+      transform: scale(0.4);
+    }
+  
+    60%{
+      transform: scale(0.6);
+    }
+  
+    80%{
+      transform: scale(0.8);
+    }
+  
+    100%{
+      transform: scale(1);
+    }
+}
+
+main > h2 {
+    margin-bottom: 10px;
+}
+
+main > span {
+    margin: 10px 0px;
+
+    font-weight: bold;
+}

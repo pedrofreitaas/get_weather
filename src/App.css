@@ -1,0 +1,100 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.App {
+  text-align: center;
+
+  display: flex; flex-direction: column;
+}
+
+.searchBox {
+  background: #fff;
+  
+  text-align: center;
+  border: solid 3px #0c0c0c;
+  border-left: solid 8px #42a915;
+
+  margin: auto; margin-top: 50px;
+  border-top-right-radius: 5px; border-bottom-right-radius: 5px;
+
+  padding: 5px 10px;
+
+  width: fit-content; height: fit-content;
+
+  box-shadow: 5px 5px 0px 0px #7e7f7d;
+
+  animation: slidein .25s forwards;
+}
+
+@keyframes slidein {
+  0%{
+    transform: translate(-500px);
+  }
+
+  20%{
+    transform: translate(-400px);
+  }
+
+  40%{
+    transform: translate(-300px);
+  }
+
+  60%{
+    transform: translate(-200px);
+  }
+
+  80%{
+    transform: translate(-100px);
+  }
+
+  100%{
+    transform: translate(0px);
+  }
+}
+
+.inputs {
+  display: flex;
+
+  align-items: center;
+}
+
+.searchBox > h2, input, button {
+  margin: 5px;
+}
+
+#input {
+  border-radius: 5%;
+  height: fit-content;
+
+  border: none;
+  outline: none;
+}
+
+#button {
+  border: none;
+  background-color: transparent;
+}
+
+#button:hover {
+  cursor:pointer;
+
+  transform: scale(1.3);
+}
+
+.animationX{
+  animation: X .25s forwards;
+}
+
+@keyframes X {
+ 0%{ transform: scale(1); }
+ 25%{ transform: scale(1.2); }
+ 50%{ transform: scale(1.4); }
+ 75%{ transform: scale(1.6); }
+ 90%{ transform: scale(1.2) }
+ 100%{ transform: scale(1); }
+}
