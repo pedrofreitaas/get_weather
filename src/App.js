@@ -71,7 +71,7 @@ function App() {
         </div>
       </div>
 
-      {weatherJson.defined && weatherJson.api_ok && <Main/>}
+      {weatherJson.defined && weatherJson.api_ok && Main(weatherJson)}
 
       {weatherJson.defined && !weatherJson.api_ok && <MainAPIError/>}
     
