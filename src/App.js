@@ -107,23 +107,23 @@ function getInputValue() {
   return value;
 }
 
-let count = 0;
+// let count = 0;
 async function getWeatherJson() {
-  // just to avoid depleting API.
-  count++;
-  return {
-    defined: true, api_ok: true,
-    city_name: "Guadalajara" + String(count),
-    datetime: "2023-07-28 10:52",
-    lat: -10, lon: -200,
-    app_temp: 32.8,
-    wind_cdir: "O",
-    wind_spd: 14.2,
+  // // just to avoid depleting API.
+  // count++;
+  // return {
+  //   defined: true, api_ok: true,
+  //   city_name: "Guadalajara" + String(count),
+  //   datetime: "2023-07-28 10:52",
+  //   lat: -10, lon: -200,
+  //   app_temp: 32.8,
+  //   wind_cdir: "O",
+  //   wind_spd: 14.2,
   
-    weather: {
-      code: 201,
-    }
-  }
+  //   weather: {
+  //     code: 201,
+  //   }
+  // }
 
   const cityName = getInputValue();
   const apiKey = process.env.REACT_APP_API_KEY;
