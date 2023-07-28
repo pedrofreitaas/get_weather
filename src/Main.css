@@ -5,7 +5,8 @@
 main{
     margin: auto; padding: 25px 20px;
     margin-top: 30px;
-    text-align: center;
+    
+    text-align: justify;
 
     width: fit-content; height: fit-content;
 
@@ -15,6 +16,7 @@ main{
 
     font-family: Verdana;
     font-weight: bold;
+    font-size: 20px;
     
     background: linear-gradient(to bottom, rgba(142, 138, 138, 0.5), rgba(0,0,0, .1));
 
@@ -52,11 +54,41 @@ main{
 }
 
 main > h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.main_header {
+  display: flex; flex-direction: row;
+
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.weatherIcon {
+  margin: 10px; padding: 0px;
 }
 
 main > span {
     margin: 10px 0px;
 
     font-weight: bold;
+}
+
+.date_span {
+  display: flex;
+  flex-direction: row-reverse; font-weight: bolder;
+}
+
+.wind_info {
+  display: flex; flex-direction: column;
+  text-align: justify;
+  margin: 5px;
+}
+
+.wind_info > h3 {
+  text-align: center;
+}
+
+.wind_dir, .wind_speed {
+  margin: 5px;
 }
